@@ -57,7 +57,7 @@ def send_data(c_socket, keyword):
 
 if __name__ == "__main__":
     host = "127.0.0.1"
-    port = 5556
+    port = 5555
     keywords = ["covid"]
     
     s = socket.socket()
