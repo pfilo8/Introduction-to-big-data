@@ -22,7 +22,9 @@ def extract_twitter_text(message):
         text = message['extended_tweet']['full_text']
     else:
         text = message['text']
-    text = str(text + "\n").encode('utf-8')
+    text = str(text + "\n")
+    text = text + "t_end"
+    text = text.encode('utf-8')
     return text
 
 
